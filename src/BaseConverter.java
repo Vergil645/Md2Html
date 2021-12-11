@@ -1,4 +1,4 @@
-package md2html;
+package src;
 
 public abstract class BaseConverter {
     protected static final char END = '\0';
@@ -24,6 +24,7 @@ public abstract class BaseConverter {
         return tmp;
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     protected boolean eof() {
         return getChar() == END;
     }
